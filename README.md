@@ -1,4 +1,5 @@
 <div align="center">
+  <img src="iconofapp.png" alt="TouchLock Icon" width="120" height="auto" />
   <h1>🔒 TouchLock</h1>
   <p><strong>A smart, invisible shield against accidental touches.</strong></p>
 </div>
@@ -48,6 +49,5 @@ TouchLock pairs its invisible overlay with Android's native systems to create an
 > This repository is a feature showcase and does not contain the inner source code of the proprietary engine.
 
 <div align="center">
-  <i>Developed by Saxrasm</i>
+  <i>Developed by Haris Khan</i>
 </div>
-
