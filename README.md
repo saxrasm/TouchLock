@@ -1,30 +1,53 @@
-# TouchLock
-A smart Android app that locks touch input to prevent accidental taps, perfect for watching videos.
+<div align="center">
+  <h1>🔒 TouchLock</h1>
+  <p><strong>A smart, invisible shield against accidental touches.</strong></p>
+</div>
 
-# 🔒 TouchLock
-
-**TouchLock** is a smart Android utility app designed to block accidental touches on your screen while still letting you see the content underneath. It is the perfect companion for watching YouTube, handing your phone to a toddler, or keeping an app securely running in your pocket.
-
-## ✨ Key Features
-
-* **Invisible Touch Blocking:** A transparent, full-screen overlay blocks all touch input while the underlying video or app continues to play perfectly uninterrupted.
-* **Navigation Lockdown:** Includes a guided setup to utilize Android's native "App Pinning" feature, completely locking the gesture navigation so kids (or accidental swipes) can't exit the app.
-* **Hardware Key Lock:** Automatically intercepts and blocks physical Home, Back, and Recents buttons.
-* **Custom Unlock Combos:** No standard PINs required. Unlock instantly using custom hardware button combinations:
-  * Hold Volume Up + Volume Down (2 seconds)
-  * Hold Volume Up (3 seconds)
-  * Hold Volume Down (3 seconds)
-* **Screen Awake Mode:** Optionally override the system timeout to keep the screen wide awake while the lock is active.
-* **Intelligent Resilience:** Automatically re-establishes the lock state if the power button is pressed, ensuring the device remains secure upon waking.
-
-## 📱 How It Works
-1. Complete the initial guided setup to select your preferred unlock combo.
-2. Open the app you want to lock (e.g., YouTube).
-3. Use Android's "App Pinning" from the recents menu to lock the navigation.
-4. Tap the floating **TouchLock** button.
-5. Touch input is now entirely disabled! 
-6. Perform your secret volume key combo to unlock and regain control.
+> [!NOTE]
+> **What is TouchLock?**  
+> TouchLock is a specialized Android utility designed to completely block touch input on your screen while remaining fully transparent. Whether you are handing your phone to a toddler to watch a video, or keeping an active app running safely in your pocket, TouchLock ensures your content plays uninterrupted.
 
 ---
-*Developed by Haris Khan*
+
+## ✨ Premium Features
+
+> [!TIP]
+> **Secret Hardware Unlocking**
+> Say goodbye to standard on-screen PIN codes that kids can easily mash. TouchLock uses physical button combinations that only you know about to unlock the screen.
+
+* 🛡️ **Invisible Touch Blocking:** A transparent, full-screen overlay blocks all touch input while the underlying video or app continues to play perfectly.
+* 🚦 **Hardware Key Interception:** Automatically intercepts and blocks physical `Home`, `Back`, and `Recents` buttons to prevent accidental app switching.
+* 🎛️ **Custom Unlock Combos:** Choose from three hidden combinations:
+  * **Volume Up + Volume Down** (Hold for 2 seconds)
+  * **Volume Up** (Hold for 3 seconds)
+  * **Volume Down** (Hold for 3 seconds)
+* ☀️ **Screen Awake Override:** Keep the screen wide awake while the lock is active, bypassing the system's normal sleep timeout.
+* 🔋 **Power-Cycle Resilient:** The lock state smartly persists even if the power button is pressed, ensuring the device remains secure when the screen wakes back up.
+
+---
+
+## 📱 How It Works
+
+TouchLock pairs its invisible overlay with Android's native systems to create an inescapable environment.
+
+> [!IMPORTANT]
+> **The Ultimate Navigation Lock**  
+> Because modern gesture navigation is deeply embedded into Android, TouchLock uses a guided setup to walk you through utilizing Android's native **"App Pinning."** This completely locks the gesture navigation so users can't swipe home or back.
+
+### The 3-Step Setup
+
+| Step | Action | Description |
+| :---: | :--- | :--- |
+| **1** | 📌 **Pin the App** | Open your target app (e.g. YouTube), open your Recents screen, and use Android's native "Pin" feature. |
+| **2** | 🔒 **Engage Lock** | Tap the floating TouchLock badge. The invisible shield will activate, blocking all taps and swipes. |
+| **3** | 🔓 **Regain Control** | Perform your secret Volume Key combo to drop the shield! |
+
+---
+
+> [!WARNING]
+> This repository is a feature showcase and does not contain the inner source code of the proprietary engine.
+
+<div align="center">
+  <i>Developed by Haris Khan</i>
+</div>
 
