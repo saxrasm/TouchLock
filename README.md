@@ -48,6 +48,6 @@ TouchLock pairs its invisible overlay with Android's native systems to create an
 > This repository is a feature showcase and does not contain the inner source code of the proprietary engine.
 
 <div align="center">
-  <i>Developed by Haris Khan</i>
+  <i>Developed by Saxrasm</i>
 </div>
 
