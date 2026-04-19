@@ -3,8 +3,9 @@
   <h1>🔒 TouchLock</h1>
   <p><strong>A smart, invisible shield against accidental touches.</strong></p>
   <br>
-  <a href="https://play.google.com/store/apps/details?id=com.touchlock.app">
-    <img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" height="60" />
+  <!-- Use this if distributing via your GitHub Releases page: -->
+  <a href="https://github.com/saxrasm/TouchLock/releases/latest">
+    <img src="https://img.shields.io/badge/Download-Latest_APK-blue?style=for-the-badge&logo=android" alt="Download APK" />
   </a>
 </div>
 
@@ -13,6 +14,18 @@
 > [!NOTE]
 > **What is TouchLock?**  
 > TouchLock is a specialized Android utility designed to completely block touch input on your screen while remaining fully transparent. Whether you are handing your phone to a toddler to watch a video, or keeping an active app running safely in your pocket, TouchLock ensures your content plays uninterrupted.
+
+---
+
+## 📸 Screenshots
+
+<p align="center">
+  <img src="Screenshot_20260419-200926.png" width="18%" />
+  <img src="Screenshot_20260419-200944.png" width="18%" />
+  <img src="Screenshot_20260419-201001.png" width="18%" />
+  <img src="Screenshot_20260419-201015.png" width="18%" />
+  <img src="Screenshot_20260419-201120.png" width="18%" />
+</p>
 
 ---
 
@@ -53,5 +66,4 @@ TouchLock pairs its invisible overlay with Android's native systems to create an
 
 > [!WARNING]
 > This repository is a feature showcase and does not contain the inner source code of the proprietary engine.
-
 
