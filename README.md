@@ -2,7 +2,13 @@
   <img src="iconofapp.png" alt="TouchLock Icon" width="120" height="auto" />
   <h1>🔒 TouchLock</h1>
   <p><strong>A smart, invisible shield against accidental touches.</strong></p>
+  <br>
+  <a href="https://play.google.com/store/apps/details?id=com.touchlock.app">
+    <img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" height="60" />
+  </a>
 </div>
+
+<br>
 
 > [!NOTE]
 > **What is TouchLock?**  
