@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ─── App ─── -->
+    <string name="app_name">TouchLock</string>
+
+    <!-- ─── Accessibility Service ─── -->
+    <string name="accessibility_service_label">TouchLock</string>
+    <string name="accessibility_service_description">TouchLock uses the Accessibility Service to intercept Volume Up and Volume Down key presses so you can unlock the screen without touching it. No personal data is accessed or collected.</string>
+
+    <!-- ─── Setup Wizard ─── -->
+    <string name="setup_welcome_title">Welcome to TouchLock</string>
+    <string name="setup_welcome_body">TouchLock lets you disable all screen touches — perfect for keeping kids from messing with your phone during videos or calls.</string>
+    <string name="setup_accessibility_title">Enable Accessibility</string>
+    <string name="setup_accessibility_body">TouchLock needs Accessibility access to listen for your secret unlock button combo (Volume Up + Volume Down).</string>
+    <string name="setup_accessibility_btn">Open Accessibility Settings</string>
+    <string name="setup_overlay_title">Allow Overlay</string>
+    <string name="setup_overlay_body">TouchLock draws a transparent shield over your screen to block all touches. This requires the "Display over other apps" permission.</string>
+    <string name="setup_overlay_btn">Open Overlay Settings</string>
+    <string name="setup_done_title">You\'re all set!</string>
+    <string name="setup_done_body">Tap the big lock button on the main screen to activate TouchLock. Press Volume Up + Volume Down together for 2 seconds to unlock.</string>
+    <string name="setup_done_btn">Let\'s Go!</string>
+    <string name="btn_next">Next</string>
+    <string name="btn_done">Done</string>
+    <string name="permission_granted">✓ Permission granted</string>
+    <string name="permission_not_granted">Not granted yet — tap above to enable</string>
+
+    <!-- Wizard Step: Unlock Method -->
+    <string name="setup_unlock_title">Unlock Method</string>
+    <string name="setup_unlock_body">How would you like to unlock the screen?</string>
+    <string name="setup_unlock_vol_combo">🔊  Volume Up + Down (hold 2s)</string>
+    <string name="setup_unlock_pin">🔢  PIN Code</string>
+
+    <!-- Wizard Step: Screen Awake -->
+    <string name="setup_awake_title">Keep Screen On?</string>
+    <string name="setup_awake_body">While locked, should the screen stay on or be allowed to sleep normally?</string>
+    <string name="setup_awake_on">☀️  Keep screen on while locked</string>
+    <string name="setup_awake_off">🌙  Allow screen to sleep normally</string>
+
+    <!-- ─── Main Screen ─── -->
+    <string name="status_locked">Screen Locked</string>
+    <string name="status_unlocked">Screen Unlocked</string>
+    <string name="btn_lock">Lock Screen</string>
+    <string name="btn_unlock">Unlock</string>
+    <string name="hint_lock">Touch the button to block all screen input</string>
+    <string name="hint_unlock">Press Vol Up + Vol Down for 2s to unlock</string>
+
+    <!-- ─── Overlay ─── -->
+    <string name="lock_badge">🔒 Touch Locked</string>
+    <string name="lock_hint_text">Press Vol ↑↓ for 2s to unlock</string>
+
+    <!-- ─── Service Notifications ─── -->
+    <string name="notification_channel_name">TouchLock</string>
+    <string name="notification_channel_desc">TouchLock active lock status</string>
+    <string name="notification_lock_title">Touch Lock is active</string>
+    <string name="notification_lock_text">Press Vol Up + Vol Down for 2s to unlock</string>
+
+    <!-- ─── Settings ─── -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_unlock_method">Unlock Method</string>
+    <string name="settings_volume_combo">Volume Up + Down (simultaneous)</string>
+    <string name="settings_volume_hold">Volume Down (hold 3s)</string>
+    <string name="settings_auto_lock">Auto-Lock Timer</string>
+    <string name="settings_auto_lock_off">Off</string>
+    <string name="settings_show_message">Show Lock Badge</string>
+    <string name="settings_floating_btn">Floating Lock Button</string>
+    <string name="settings_pin_enabled">Require PIN to unlock</string>
+    <string name="settings_set_pin">Set PIN</string>
+
+    <!-- ─── Help ─── -->
+    <string name="help_title">Help</string>
+    <string name="help_q1">How do I unlock?</string>
+    <string name="help_a1">Press Volume Up and Volume Down at the same time and hold for 2 seconds. The screen will unlock immediately.</string>
+    <string name="help_q2">Why does it need Accessibility permission?</string>
+    <string name="help_a2">The Accessibility Service is the only Android-approved way to listen for hardware volume key presses when the screen is blocked.</string>
+    <string name="help_q3">Does it work during video calls?</string>
+    <string name="help_a3">Yes! The transparent overlay blocks touches but does not block sound, video, or incoming calls.</string>
+    <string name="help_q4">Will it survive closing the app?</string>
+    <string name="help_a4">Yes. The lock runs as a Foreground Service, which keeps it alive even when you switch apps or the screen turns off.</string>
+    <string name="help_q5">Why does the notification stay?</string>
+    <string name="help_a5">Android requires Foreground Services to show a persistent notification. You can minimize or hide it in your notification settings.</string>
+    <!-- ─── Widget ─── -->
+    <string name="widget_label">Lock</string>
+    <string name="widget_description">Tap to instantly lock the touchscreen</string>
+
+</resources>

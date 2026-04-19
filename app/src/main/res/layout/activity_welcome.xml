@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="36dp">
+
+    <!-- Spacer top -->
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Lock icon -->
+    <TextView
+        android:id="@+id/tvIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="🔐"
+        android:textSize="80sp"
+        android:alpha="0" />
+
+    <View android:layout_width="0dp" android:layout_height="28dp" />
+
+    <!-- Heading line 1 -->
+    <TextView
+        android:id="@+id/tvLine1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Hey, welcome to"
+        android:textColor="@color/text_secondary"
+        android:textSize="18sp"
+        android:alpha="0" />
+
+    <!-- Heading line 2 (bold app name) -->
+    <TextView
+        android:id="@+id/tvLine2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="TouchLock"
+        android:textColor="@color/text_primary"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.02"
+        android:alpha="0" />
+
+    <View android:layout_width="0dp" android:layout_height="12dp" />
+
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="What should we call you?"
+        android:textColor="@color/text_secondary"
+        android:textSize="15sp"
+        android:alpha="0" />
+
+    <View android:layout_width="0dp" android:layout_height="32dp" />
+
+    <!-- Name input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilName"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your name..."
+        app:boxCornerRadiusTopStart="14dp"
+        app:boxCornerRadiusTopEnd="14dp"
+        app:boxCornerRadiusBottomStart="14dp"
+        app:boxCornerRadiusBottomEnd="14dp"
+        app:boxStrokeColor="@color/primary"
+        app:hintTextColor="@color/text_secondary"
+        android:alpha="0">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:inputType="textPersonName"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <View android:layout_width="0dp" android:layout_height="24dp" />
+
+    <!-- Go button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnGo"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Let's Go →"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/primary"
+        app:cornerRadius="16dp"
+        android:alpha="0" />
+
+    <!-- Spacer bottom -->
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ─── Background palette (deep space dark) ─── -->
+    <color name="background">#0A0A0F</color>
+    <color name="surface">#12121A</color>
+    <color name="surface_elevated">#1C1C28</color>
+
+    <!-- ─── Brand ─── -->
+    <color name="primary">#4F8EF7</color>
+    <color name="primary_dark">#2563EB</color>
+    <color name="primary_light">#6BA3FF</color>
+    <color name="accent">#7C3AED</color>
+
+    <!-- ─── Text ─── -->
+    <color name="text_primary">#F1F5F9</color>
+    <color name="text_secondary">#94A3B8</color>
+    <color name="text_hint">#475569</color>
+
+    <!-- ─── State colours ─── -->
+    <color name="locked_color">#EF4444</color>
+    <color name="unlocked_color">#22C55E</color>
+
+    <!-- ─── Misc ─── -->
+    <color name="divider">#1E293B</color>
+    <color name="overlay_badge_bg">#E61C1C28</color>
+    <color name="glow_blue">#204F8EF7</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+</resources>

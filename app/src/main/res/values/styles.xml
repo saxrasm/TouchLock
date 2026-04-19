@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="WizardDot">
+        <item name="android:layout_width">10dp</item>
+        <item name="android:layout_height">10dp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:background">@drawable/wizard_dot_bg</item>
+    </style>
+</resources>

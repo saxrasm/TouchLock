@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- ─── Permissions ─────────────────────────────────────────────────── -->
+
+    <!-- Draw full-screen transparent overlay above all apps -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- Keep lock service alive when app is in background -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <!-- Required on Android 14+ for special-use foreground services -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+
+    <!-- Restore floating button service after phone restarts -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!-- Keep screen on while locked -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- ─── Application ─────────────────────────────────────────────────── -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TouchLock">
+
+        <!-- ── Activities ──────────────────────────── -->
+
+        <!-- Welcome screen — LAUNCHER (asks parent name on first launch) -->
+        <activity
+            android:name=".WelcomeActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Setup wizard — shown on first launch before permissions are granted -->
+        <activity
+            android:name=".SetupWizardActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Main screen — shown after all permissions are granted -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Settings screen -->
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Help / FAQ screen -->
+        <activity
+            android:name=".HelpActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- ── Services ────────────────────────────── -->
+
+        <!-- Core lock overlay service — foreground, keeps overlay alive -->
+        <service
+            android:name=".services.LockOverlayService"
+            android:exported="false"
+            android:foregroundServiceType="specialUse">
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="touchLockOverlay" />
+        </service>
+
+        <!-- Floating button service — foreground, overlay above all apps -->
+        <service
+            android:name=".services.FloatingButtonService"
+            android:exported="false"
+            android:foregroundServiceType="specialUse">
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="touchLockFloatingButton" />
+        </service>
+
+        <!-- Accessibility service — intercepts hardware volume key events -->
+        <service
+            android:name=".services.TouchLockAccessibilityService"
+            android:exported="true"
+            android:label="@string/accessibility_service_label"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service_config" />
+        </service>
+
+        <!-- ── Receivers ───────────────────────────── -->
+
+        <!-- Restart floating button service after phone reboot -->
+        <receiver
+            android:name=".receivers.BootReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Emergency unlock — catches screen-off events (registered dynamically) -->
+        <receiver
+            android:name=".receivers.EmergencyUnlockReceiver"
+            android:exported="false" />
+
+        <!-- Home screen widget — 1×1 lock shortcut -->
+        <receiver
+            android:name=".widget.LockWidgetProvider"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.touchlock.app.ACTION_WIDGET_LOCK" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/lock_widget_info" />
+        </receiver>
+
+    </application>
+
+</manifest>
